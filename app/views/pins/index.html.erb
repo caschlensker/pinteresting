@@ -1,6 +1,6 @@
 <h1>Listing pins</h1>
 
-<table>
+<table class='table'>
   <thead>
     <tr>
       <th>Image</th>
@@ -30,5 +30,7 @@
 
 <br>
 <% if user_signed_in? %>
-  <%= link_to 'New Pin', new_pin_path %>
+  <p>
+    <%= link_to 'New Pin', new_pin_path, class: 'btn btn-default' %>
+  </p>
 <% end %>
